@@ -1,0 +1,1 @@
+add_library(FixedHistogram FixedHistogram/fixed_histogram.cpp)
