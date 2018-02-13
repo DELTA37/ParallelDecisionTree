@@ -22,9 +22,16 @@ public:
   
   std::vector<double> uniform(int _B);
 private:
+  /*
+   * The article definition B == data.size()
+   */
   int B;
   double eps;
   std::map<double, int> data;
+
+  /*
+   * left and right edges of histogram. We should compute it during execution
+   */
   double min_point, max_point;
 
   void _reduce(void); 
